@@ -4,11 +4,18 @@ import java.util.Scanner;
 
 public class Area {
     public static void main(String[] args) {
-        double pi = 3.14;
-        double r;
+        Double r;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a radius: ");
-        r = in.nextDouble();
-        System.out.println(pi * r * r);
+        try {
+            r = in.nextDouble();
+            if (r < 0) {
+                System.out.println("ERROR: Radius must be a positive number.");
+            } else {
+                System.out.println(Circle.getArea(r));
+            }
+        } catch(Exception e) {
+            System.out.println("ERROR: Invalid input.");
+        }
     }
 }
