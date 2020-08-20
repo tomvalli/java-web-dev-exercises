@@ -19,8 +19,7 @@ public class CountChars {
         HashMap<Character, Integer> count = new HashMap<>();
 
         for (char letter : charArr){
-            int ascii = letter;
-            if (ascii > 96 && ascii < 123) {
+            if (letter > 96 && letter < 123) {
                 if(count.containsKey(letter)) {
                     count.put(letter, count.get(letter) + 1);
                 } else {
