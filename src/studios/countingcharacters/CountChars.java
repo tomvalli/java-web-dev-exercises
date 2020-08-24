@@ -15,6 +15,8 @@ public class CountChars {
         System.out.print("Enter your string here: ");
         text = in.nextLine().toLowerCase();
 
+
+
         char[] charArr = text.toCharArray();
         HashMap<Character, Integer> count = new HashMap<>();
 
