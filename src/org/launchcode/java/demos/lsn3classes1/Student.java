@@ -35,9 +35,12 @@ public class Student {
     }
 
     public void addGrade(int courseCredits, double grade) {
+        double currentQualityScore = this.numberOfCredits * this.gpa;
+        double courseQualityScore = grade * courseCredits;
+        double totalQualityScore = currentQualityScore + courseQualityScore;
         this.numberOfCredits += courseCredits;
-        double totalQualityScore = grade * courseCredits;
         this.gpa = totalQualityScore / this.numberOfCredits;
+
     }
 
     public String getGradeLevel() {
