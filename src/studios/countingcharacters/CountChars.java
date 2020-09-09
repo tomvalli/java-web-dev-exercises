@@ -13,7 +13,7 @@ public class CountChars {
 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your string here: ");
-        text = in.nextLine().toLowerCase();
+        //text = in.nextLine().toLowerCase();
 
 
 
