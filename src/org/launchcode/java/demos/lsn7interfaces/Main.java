@@ -19,8 +19,7 @@ public class Main {
 
     public static <T extends Ingredient> void printArray(ArrayList<T> arr){
         for (T item : arr) {
-            Ingredient ing = (Ingredient) item;
-            System.out.println(ing.getName() + ": " + ing.getCost());
+            System.out.println(item.getName() + ": " + item.getCost());
         }
     }
 }
